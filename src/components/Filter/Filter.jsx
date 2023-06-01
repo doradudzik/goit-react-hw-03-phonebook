@@ -18,7 +18,7 @@ const Filter = ({ filter, handleChange }) => {
 
 Filter.propTypes = {
   filter: PropTypes.string.isRequired,
-  onLeaveFeedback: PropTypes.func.isRequired,
+  handleChange: PropTypes.func.isRequired,
 };
 
 export default Filter;

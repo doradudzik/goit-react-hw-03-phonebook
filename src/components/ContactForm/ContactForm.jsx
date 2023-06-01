@@ -8,6 +8,7 @@ class ContactForm extends Component {
     name: '',
     number: '',
   };
+
   handleChange = evt => {
     const { name, value } = evt.target;
     this.setState({ [name]: value.trim() });
@@ -71,8 +72,7 @@ class ContactForm extends Component {
   }
 }
 ContactForm.propTypes = {
-  handleSubmit: PropTypes.func.isRequired,
-  handleChange: PropTypes.func.isRequired,
+  addContact: PropTypes.func.isRequired,
 };
 
 export default ContactForm;
